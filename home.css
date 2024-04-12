@@ -1,0 +1,274 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh; /* Adjusted height to fill the viewport */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-section {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 50px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Add hover effect */
+.about-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Add animation effect */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.about-section {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Add filter effect */
+.about-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.welcome-section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styles */
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(77, 235, 77);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for New Section */
+.new-section {
+  padding: 50px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.new-content h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item h3 {
+  color: #555;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #777;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Add hover effect */
+.new-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Add animation effect */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.new-section {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Why Choose Us Section Styles */
+.choose-us-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.choose-us-content h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(25% - 20px); /* Adjust card width as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #555;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #777;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Add hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Add animation effect */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 1s ease-out;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Add a subtle blur effect to the footer */
+footer {
+  filter: blur(1px);
+}

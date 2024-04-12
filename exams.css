@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar .nav-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+.subject {
+  width: 45%; /* Adjust the width to fit two sections in one line */
+  display: inline-block; /* Change this to inline-block */
+  margin-right: 2%; /* ASdd some margin between the sections */
+  margin-bottom: 20px;
+  padding: 0 10px;
+  vertical-align: top; /* Add this to align the sections at the top */
+}
+
+.exam-card {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+}
+
+.exam-card h2 {
+  margin-bottom: 10px;
+}
+
+.exam-card p {
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background-color: #ff4444;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #ff0000;
+}

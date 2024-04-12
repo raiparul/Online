@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Detail</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="exam_detail.css">
+  
+</head>
+<body>
+  <div class="sidebar">
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+      <a href="exam_detail.html"><i class="fa fa-circle-o"></i> Exam Details</a>
+      <a href="exams.html"><i class="fa fa-clone"></i> Exams</a>
+      <a href="results.html"><i class="fa fa-list-alt"></i> Results</a>
+      <a href="login.html"><i class="fa fa-sign-in"></i> Login</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="welcome-content">
+        <h1>Welcome to the Exam Detail Page</h1>
+        <p>This is the exam detail page content.</p>
+        <a href="#" class="start-button">Start Exam</a> <!-- Add the start button -->
+      </div>
+    </section>
+    
+
+    <section class="instruction-section">
+      <h2>Instructions</h2>
+      <div class="instruction-cards">
+        <div class="instruction-card">
+          <i class="fas fa-book"></i>
+          <p>Read the instructions carefully before starting the exam.</p>
+        </div>
+        <div class="instruction-card">
+          <i class="fas fa-ban"></i>
+          <p>Do not refresh the page during the exam.</p>
+        </div>
+        <!-- Add more cards as needed -->
+        <div class="instruction-card">
+          <i class="fas fa-arrow-left"></i>
+          <p>Do not click the back button during the exam.</p>
+        </div>
+        <div class="instruction-card">
+          <i class="fas fa-check"></i>
+          <p>Answer all the questions before submitting the exam.</p>
+        </div>
+        <div class="instruction-card">
+          <i class="fas fa-lock"></i>
+          <p>Once submitted, the exam cannot be restarted.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="programming-questions-section">
+      <h1>Types of Programming Questions</h1>
+      <p>In a programming languages exam, you may encounter various types of questions to test your knowledge and coding skills. Here are some common question formats:</p>
+      <div class="programming-cards">
+        <div class="programming-card">
+          <i class="fas fa-list-alt"></i>
+          <h3>Multiple-choice questions</h3>
+          <p>These questions provide a list of options and you need to select the correct answer.</p>
+        </div>
+        <div class="programming-card">
+          <i class="fas fa-code"></i>
+          <h3>Code tracing questions</h3>
+          <p>These questions involve analyzing a given piece of code and determining its output or identifying any errors.</p>
+        </div>
+        <div class="programming-card">
+          <i class="fas fa-pencil-alt"></i>
+          <h3>Code completion questions</h3>
+          <p>These questions provide a partially-written code snippet and you need to fill in the missing parts to make it functional.</p>
+        </div>
+        <div class="programming-card">
+          <i class="fas fa-terminal"></i>
+          <h3>Coding questions</h3>
+          <p>These questions require you to write a complete program to solve a specific problem or fulfill a given requirement.</p>
+        </div>
+      </div>
+      <p>Make sure to understand the requirements of each question type and practice solving them to improve your programming skills. Good luck with your programming languages exam!</p>
+    </section>
+    
+
+    
+    
+    
+  </div>
+  
+
+  <script src="exam_detail.js"></script>
+</body>
+</html>

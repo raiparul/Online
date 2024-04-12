@@ -1,0 +1,339 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .sidebar .openbtn:hover {
+    background-color: #555;
+  }
+  
+  .sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    background-color: #555;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Content Styles */
+  .content {
+    margin-left: 80px;
+    padding: 20px;
+  }
+  
+  /* Welcome Section Styles */
+  /* Welcome Section Styles */
+.welcome-section {
+  text-align: center;
+  padding: 50px 0; /* Add padding for spacing */
+  background-color: #007bff;
+}
+
+.welcome-section h1 {
+  font-size: 2.5em;
+  color: black; /* Blue color */
+  margin-bottom: 20px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Apply drop shadow filter */
+  animation: fadeInDown 1s ease; /* Apply fade-in animation */
+}
+
+.welcome-section p {
+  font-size: 1.2em;
+  color: white;
+  animation: fadeInUp 1s ease; /* Apply fade-in animation */
+}
+
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.start-button:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}
+
+
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+/* Instruction Section Styles */
+.instruction-section {
+  text-align: center; /* Center-align content */
+}
+
+.instruction-heading {
+  margin-bottom: 20px; /* Adjust the margin between the heading and cards */
+}
+
+
+
+.instruction-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instruction-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjust the width of each card */
+  transition: transform 0.3s ease;
+  position: relative; /* To position the icon with respect to the card */
+}
+
+.instruction-card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Add drop shadow to the icon */
+}
+
+.instruction-card p {
+  font-size: 1.2em;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.instruction-card:hover {
+  transform: translateY(-5px);
+}
+
+.instruction-card:hover p {
+  color: #007bff;
+}
+
+/* Animation for hovering over the card */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.instruction-card:hover i {
+  animation: pulse 1s infinite alternate; /* Apply pulse animation to the icon */
+}
+
+/* Programming Questions Section Styles */
+/* Programming Questions Section Styles */
+.programming-questions-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+}
+
+.programming-questions-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.programming-questions-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.programming-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap if necessary */
+}
+
+.programming-card {
+  background-color: #ffc107; /* Yellow background color for cards */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: calc(25% - 40px); /* Adjust card width */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
+}
+
+.programming-card i {
+  font-size: 3em;
+  color: #007bff; /* Blue color for icons */
+  margin-bottom: 20px;
+}
+
+.programming-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.programming-card p {
+  font-size: 1.2em;
+  color: #333; /* Slightly darker color for paragraphs */
+}
+
+/* Updated card styles for different color combination */
+.programming-card:nth-child(odd) {
+  background-color: #28a745; /* Green background color for odd cards */
+}
+
+.programming-card:nth-child(even) {
+  background-color: #dc3545; /* Red background color for even cards */
+}
+
+.programming-card:hover {
+  transform: translateY(-5px);
+}
+
+.programming-card:hover i {
+  color: #000; /* Black color for icons on hover */
+}
+
+.programming-card:hover h3,
+.programming-card:hover p {
+  color: #000; /* Black color for headings and paragraphs on hover */
+}
+
+
+
+/* Start Section Styles */
+.start-section {
+  background-color: #ffbb33; /* Yellow background color */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.start-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.start-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff; /* White color for heading */
+}
+
+.start-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #333333; /* Dark gray color for text */
+}
+
+.start-button {
+  background-color: #ff5f5f; /* Red background color for button */
+  color: #ffffff; /* White text color for button */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.start-button:hover {
+  background-color: #ff3333; /* Darker red background color for button on hover */
+}
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding:  10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 75%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container p {
+  font-size: 1em;
+  text-align: center;
+}
